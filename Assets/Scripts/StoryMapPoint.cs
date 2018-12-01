@@ -3,7 +3,6 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class StoryMapPoint : MonoBehaviour {
-	public GameObject Plane = null;
 	public EventType Type = EventType.Combat;
 	public bool Free = true;
 
@@ -71,7 +70,7 @@ public class StoryMapPoint : MonoBehaviour {
 		if ( _curEvent == null ) {
 			return;
 		}
-
+		GameState.Instance.TryOpenActionWindow(this, _curEvent);
 	}
 
 	void OnPlayerActionMade(Event_PlayerActionMade e) {

@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
@@ -36,6 +36,7 @@ public class StoryEventManager : MonoBehaviour {
         if ( point == null ) {
             return null;
         }
+		point.SetupEvent(selectedEvent);
 
         _usedEvents.Add(selectedEvent.Id);
         _curEventCount++;

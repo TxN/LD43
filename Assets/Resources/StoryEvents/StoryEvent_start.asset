@@ -14,7 +14,7 @@ MonoBehaviour:
   Id: 
   Type: 0
   IsReusable: 1
-  TimeToExpire: 1
+  TimeToExpire: 15
   RedTeam: 1
   BlueTeam: 1
   Title: 

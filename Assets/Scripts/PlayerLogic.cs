@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using EventSys;
 using UnityEngine;
 
@@ -9,6 +10,8 @@ public class PlayerLogic : MonoBehaviour {
 	public float PlaneSpeed = 10f;
 	public float SpawnRadius = 50f;
 
+	public List<RectTransform> SpawnPoints = new List<RectTransform>();
+
 	public enum PlaneState {
 		Ready,
 		FlyIn,
@@ -18,7 +21,7 @@ public class PlayerLogic : MonoBehaviour {
 	StoryMapPoint _currentPoint = null;
 
 	PlaneState _state = PlaneState.Ready;
-
+	Vector3 _dirVector;
 	public PlaneState CurrentState {
 		get {
 			return _state;
@@ -47,15 +50,12 @@ public class PlayerLogic : MonoBehaviour {
 	}
 
 	void FlyForward() {
-		transform.Translate(
-			transform.TransformDirection(
-				Vector3.forward * PlaneSpeed * Time.deltaTime
-			)
-		);
+		
+		transform.position += (_dirVector * PlaneSpeed * Time.deltaTime);
 	}
 
-	void OnBecameInvisible() {
-		if ( Plane == null || _state == PlaneState.FlyIn ) {
+	public void OnInvisible() {
+		if ( Plane == null || _state != PlaneState.FlyOut ) {
 			return;
 		}
 
@@ -66,9 +66,16 @@ public class PlayerLogic : MonoBehaviour {
 
 	public void StartFly(StoryMapPoint targetPoint) {
 		_currentPoint = targetPoint;
-		Vector3 newPosition = Random.onUnitSphere * SpawnRadius;
-		transform.position = newPosition;
-		transform.LookAt(_currentPoint.transform);
+		Vector2 newPosition = SpawnPoints[Random.Range(0, SpawnPoints.Count)].anchoredPosition;
+		
+		GetComponent<RectTransform>().anchoredPosition = newPosition;
+		_dirVector = (_currentPoint.transform.position - transform.position).normalized;
+		var targetPos = targetPoint.transform.position;
+		var thisPos = transform.position;
+		targetPos.x = targetPos.x - thisPos.x;
+		targetPos.y = targetPos.y - thisPos.y;
+		var angle = Mathf.Atan2(targetPos.y, targetPos.x) * Mathf.Rad2Deg;
+		transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle - 90));
 
 		_state = PlaneState.FlyIn;
 		Plane.SetActive(true);

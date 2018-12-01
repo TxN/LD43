@@ -47,6 +47,7 @@ public class GameState : MonoSingleton<GameState> {
 		if ( !IsPause ) {
 			_timer += Time.deltaTime;
 			UpdateEventSpawn();
+			UpdateSegmentShow();
 		}
 
 	}
@@ -92,7 +93,7 @@ public class GameState : MonoSingleton<GameState> {
 	}
 
 	public bool CanLaunchPlane() {
-		return false;
+		return Player.CurrentState == PlayerLogic.PlaneState.Ready;
 	}
 
 	public void TryLaunchPlane(StoryMapPoint targetPoint) {

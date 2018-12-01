@@ -27,7 +27,7 @@ public class ActionWindow : MonoBehaviour {
 	}
 
 	public bool CanShow() {
-		return gameObject.activeSelf;
+		return !gameObject.activeSelf;
 	}
 
 	public void ShowWindow(StoryMapPoint point, StoryEvent storyEvent) {
@@ -75,6 +75,8 @@ public class ActionWindow : MonoBehaviour {
 		}
 
 		EventManager.Fire(new Event_PlayerActionMade() { ActionType = StoryEvent.ResultOptions.ResultType.Red, EventId = _curEvent.Id, Point = _curPoint });
+		var gs = GameState.Instance;
+		gs.TryLaunchPlane(_curPoint);
 		CloseWindow();
 	}
 
@@ -83,6 +85,8 @@ public class ActionWindow : MonoBehaviour {
 			return;
 		}
 		EventManager.Fire(new Event_PlayerActionMade() { ActionType = StoryEvent.ResultOptions.ResultType.Blue, EventId = _curEvent.Id, Point = _curPoint });
+		var gs = GameState.Instance;
+		gs.TryLaunchPlane(_curPoint);
 		CloseWindow();
 
 	}
@@ -96,6 +100,8 @@ public class ActionWindow : MonoBehaviour {
 		} else {
 			EventManager.Fire(new Event_PlayerActionMade() { ActionType = StoryEvent.ResultOptions.ResultType.Blue, EventId = _curEvent.Id, Point = _curPoint });
 		}
+		var gs = GameState.Instance;
+		gs.TryLaunchPlane(_curPoint);
 		CloseWindow();
 	}
 }
