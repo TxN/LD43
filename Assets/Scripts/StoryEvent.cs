@@ -20,6 +20,8 @@ public class StoryEvent : ScriptableObject
         public int LostBlue = 100;
     }
 
+    public string Id;
+
     public EventType Type;
 
     public bool RedTeam;
