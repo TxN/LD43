@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 public enum EventType { Combat, Humanitarian };
 
-public class TemplateEvent : ScriptableObject
+public class StoryEvent : ScriptableObject
 {
     [System.Serializable]
     public class ResultOptions {
