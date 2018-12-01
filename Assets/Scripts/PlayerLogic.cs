@@ -29,4 +29,15 @@ public class PlayerLogic : MonoBehaviour {
             EventManager.Fire<Event_Plane_FlyOut>(new Event_Plane_FlyOut());
         }
 	}
+
+    void OnBecameInvisible()
+    {
+        if (Plane == null || _state == PlaneState.FlyIn)
+        {
+            return;
+        }
+       
+        EventManager.Fire<Event_Plane_Hidden>(new Event_Plane_Hidden());
+        Destroy(Plane);
+    }
 }

@@ -11,4 +11,8 @@ namespace EventSys {
     public struct Event_Plane_FlyOut
     {
     }
+
+    public struct Event_Plane_Hidden
+    {
+    }
 }
