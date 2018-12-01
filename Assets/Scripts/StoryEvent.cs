@@ -28,7 +28,7 @@ public class StoryEvent : ScriptableObject
 
     public bool IsReusable = false;
 
-    public int TimeToExpire = 1;
+    public float TimeToExpire = 1f;
 
     public bool RedTeam;
 
