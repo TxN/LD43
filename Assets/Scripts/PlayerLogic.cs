@@ -8,6 +8,8 @@ public class PlayerLogic : MonoBehaviour {
     public float PlaneOnTargetDelta = 5f;
     public float MaxSpawnRadius = 1500;
     public float MinSpawnRadius = 1000;
+    public float PlaneSpeed = 100f;
+    public float SpawnRadius = 10f;
 
     public enum PlaneState {
         Ready,
@@ -22,9 +24,18 @@ public class PlayerLogic : MonoBehaviour {
 	private void Update()
 	{
         float distance = Vector3.Distance(transform.position, _currentPoint.transform.position);
-        if (_state == PlaneState.FlyIn && distance <= PlaneOnTargetDelta) {
-            _state = PlaneState.FlyOut;
-            EventManager.Fire<Event_Plane_OnTarget>(new Event_Plane_OnTarget());
+        if (_state == PlaneState.FlyIn) {
+            if (distance <= PlaneOnTargetDelta)
+            {
+                _state = PlaneState.FlyOut;
+                EventManager.Fire<Event_Plane_OnTarget>(new Event_Plane_OnTarget());
+            } else {
+                transform.Translate(
+                    transform.TransformDirection(
+                        Vector3.forward * PlaneSpeed * Time.deltaTime
+                    )
+                );
+            }
         } else if (_state == PlaneState.FlyOut && distance > PlaneOnTargetDelta) {
             EventManager.Fire<Event_Plane_FlyOut>(new Event_Plane_FlyOut());
         }
@@ -38,6 +49,16 @@ public class PlayerLogic : MonoBehaviour {
         }
        
         EventManager.Fire<Event_Plane_Hidden>(new Event_Plane_Hidden());
-        Destroy(Plane);
+        Plane.SetActive(false);
+    }
+
+    public void StartFly(StoryMapPoint targetPoint) {
+        _currentPoint = targetPoint;
+        Vector3 newPosition = Random.onUnitSphere * SpawnRadius;
+        transform.position = newPosition;
+        transform.LookAt(_currentPoint.transform);
+
+        _state = PlaneState.FlyIn;
+        Plane.SetActive(true);
     }
 }
