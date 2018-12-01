@@ -19,7 +19,7 @@ public class StoryEventManager : MonoBehaviour {
         Events = Resources.LoadAll<StoryEvent>("StoryEvents").ToList();
     }
 
-    public void TryCreateNewEvent() {
+    public StoryEvent TryCreateNewEvent() {
         StoryEvent selectedEvent = null;
 
         if ( _curEventCount < FirstEvents.Count ) {
@@ -29,20 +29,20 @@ public class StoryEventManager : MonoBehaviour {
         }
 
         if ( selectedEvent == null ) {
-            return;
+            return null;
         }
 
         var point = GetFreeEventMapPoint(selectedEvent.Type);
         if ( point == null ) {
-            return;
+            return null;
         }
 
         _usedEvents.Add(selectedEvent.Id);
         _curEventCount++;
 
-
-
         EventManager.Fire<Event_NewEventCreated>(new Event_NewEventCreated() { EventId = selectedEvent.Id, Point = point });
+
+        return selectedEvent;
     }
 
     StoryEvent GetRandomEvent() {

@@ -21,6 +21,12 @@ public class PlayerLogic : MonoBehaviour {
 
     PlaneState _state = PlaneState.Ready;
 
+    public PlaneState CurrentState {
+        get {
+            return _state;
+        }
+    }
+
 	private void Update()
 	{
         float distance = Vector3.Distance(transform.position, _currentPoint.transform.position);

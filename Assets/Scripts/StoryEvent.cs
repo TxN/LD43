@@ -19,6 +19,8 @@ public class StoryEvent : ScriptableObject
 
         public int LostBlue = 100;
 
+        public int Aggression = 0;
+
         public string ResultText;
     }
 
@@ -38,9 +40,6 @@ public class StoryEvent : ScriptableObject
 
     public string Description;
 
-    public ResultOptions RedButtonResult;
+    public List<ResultOptions> StoryResults = new List<ResultOptions>();
 
-    public ResultOptions BlueButtonResult;
-
-    public ResultOptions NothingResult;
 }
