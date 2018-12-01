@@ -30,5 +30,11 @@ public class TemplateEvent : ScriptableObject
 
     public string Description;
 
-    public List<ResultOptions> results;
+    public ResultOptions RedButtonResult;
+
+    public ResultOptions BlueButtonResult;
+
+    public ResultOptions NothingResult;
+
+    public string ResultText;
 }
