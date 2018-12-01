@@ -11,4 +11,22 @@ namespace EventSys {
     public struct Event_Plane_Hidden
     {
     }
+
+    public struct Event_NewEventCreated {
+      public  string        EventId;
+      public StoryMapPoint Point;
+    }
+
+    public struct Event_PlayerActionMade {
+        public  string EventId;
+        public  StoryMapPoint Point;
+    }
+
+    public struct Event_StoryPointDone {
+        public string EventId;
+        public StoryMapPoint Point;
+    }
+
+
+
 }
