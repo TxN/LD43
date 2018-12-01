@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Terrain
+    uniqueID: 675240713
+    locked: 0
+  - name: IconsOnTerrain
+    uniqueID: 3400516819
+    locked: 0
+  - name: OverTerrain
+    uniqueID: 3813307329
+    locked: 0
+  - name: UI
+    uniqueID: 66251229
+    locked: 0

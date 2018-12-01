@@ -1,68 +1,89 @@
-﻿using System.Collections;
-using System.Collections.Generic;
 using EventSys;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StoryMapPoint : MonoBehaviour {
-    public GameObject Plane = null;
-    public EventType Type = EventType.Combat;
-    public bool Free = true;
+	public GameObject Plane = null;
+	public EventType Type = EventType.Combat;
+	public bool Free = true;
 
-    public SpriteRenderer Renderer = null;
+	public Image Image = null;
 
-    public Sprite WarIcon = null;
-    public Sprite HumIcon = null;
+	public Sprite WarIcon = null;
+	public Sprite HumIcon = null;
 
-    StoryEvent _curEvent = null;
-    float _liveTimer = 0f;
-    bool _isPlaneFlyIn = false;
+	StoryEvent _curEvent = null;
+	float _liveTimer = 0f;
+	bool _isPlaneFlyIn = false;
+	StoryEvent.ResultOptions.ResultType _actionType = StoryEvent.ResultOptions.ResultType.Nothing;
 
-	private void Start()
-	{
-        EventManager.Subscribe<Event_PlayerActionMade>(this, onPlayerActionMade);
-        EventManager.Subscribe<Event_Plane_FlyIn>(this, onPlaneFlyIn);
+	private void Start() {
+		EventManager.Subscribe<Event_PlayerActionMade>(this, OnPlayerActionMade);
+		EventManager.Subscribe<Event_Plane_OnTarget>(this, OnPlaneOnTarget);
 	}
 
-	private void Update()
-	{
-        if (!GameState.Instance.IsPause && !_isPlaneFlyIn) {
-            _liveTimer += Time.deltaTime;
-        }
+	private void Update() {
+		if ( _curEvent == null ) {
+			return;
+		}
+		if ( !GameState.Instance.IsPause && !_isPlaneFlyIn ) {
+			_liveTimer += Time.deltaTime;
+		}
+		if ( !_isPlaneFlyIn && _liveTimer > _curEvent.TimeToExpire ) {
+			ExpireEvent();
+		}
 	}
 
-	private void OnDestroy()
-	{
-        EventManager.Unsubscribe<Event_PlayerActionMade>(onPlayerActionMade);
+	private void OnDestroy() {
+		EventManager.Unsubscribe<Event_PlayerActionMade>(OnPlayerActionMade);
+		EventManager.Unsubscribe<Event_Plane_OnTarget>(OnPlaneOnTarget);
+	}
+
+	void ExpireEvent() {
+		EventManager.Fire(new Event_StoryPointDone() { EventId = _curEvent.Id, Point = this, ActionType = _actionType });
+		Free = true;
+		_curEvent = null;
+		_actionType = StoryEvent.ResultOptions.ResultType.Nothing;
+		_liveTimer = 0f;
+		Image.enabled = false;
 	}
 
 	public void SetupEvent(StoryEvent storyEvent) {
-        if ( !Renderer ) {
-            Renderer = GetComponentInChildren<SpriteRenderer>();
-        }
-        _curEvent = storyEvent;
-        // get event info from manager, setup, etc
-        Free = false;
-        _liveTimer = 0f;
-    }
+		if ( !Image ) {
+			Image = GetComponentInChildren<Image>();
+		}
+		if ( storyEvent.Type == EventType.Combat ) {
+			Image.sprite = WarIcon;
+		}
+		if ( storyEvent.Type == EventType.Humanitarian ) {
+			Image.sprite = HumIcon;
+		}
+		Image.SetNativeSize();
+		Image.enabled = true;
 
-    public void FinishEvent() {
+		_curEvent = storyEvent;
+		Free = false;
+		_liveTimer = 0f;
+		_actionType = StoryEvent.ResultOptions.ResultType.Nothing;
+	}
 
-        _liveTimer = 0f;
-        _isPlaneFlyIn = false;
-        Free = true;
-    }
+	public void OpenActionWindow() {
+		if ( _curEvent == null ) {
+			return;
+		}
 
-    void onPlayerActionMade(Event_PlayerActionMade e) {
-        if (e.Point != this) {
-            return;
-        }
+	}
 
-        Plane.GetComponent<PlayerLogic>().StartFly(this);
-    }
+	void OnPlayerActionMade(Event_PlayerActionMade e) {
+		if ( e.Point != this ) {
+			return;
+		}
+		_actionType = e.ActionType;
+		_isPlaneFlyIn = true;
+	}
 
-    void onPlaneFlyIn(Event_Plane_FlyIn e)
-    {
-        _isPlaneFlyIn = true;
-    }
+	void OnPlaneOnTarget(Event_Plane_OnTarget e) {
+		ExpireEvent();
+	}
 
 }

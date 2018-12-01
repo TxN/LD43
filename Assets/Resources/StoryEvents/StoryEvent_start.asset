@@ -9,30 +9,35 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7357bea8359b84a0c97421d3d3c369cf, type: 3}
-  m_Name: StoryEvent_new
+  m_Name: StoryEvent_start
   m_EditorClassIdentifier: 
   Id: 
   Type: 0
-  RedTeam: 0
-  BlueTeam: 0
+  IsReusable: 1
+  TimeToExpire: 1
+  RedTeam: 1
+  BlueTeam: 1
   Title: 
   Description: 
-  RedButtonResult:
-    Type: 0
-    ForceRed: 5
-    ForceBlue: -5
-    LostRed: 100
-    LostBlue: 100
-  BlueButtonResult:
-    Type: 0
-    ForceRed: 5
-    ForceBlue: -5
-    LostRed: 100
-    LostBlue: 100
-  NothingResult:
-    Type: 0
-    ForceRed: 5
-    ForceBlue: -5
-    LostRed: 100
-    LostBlue: 100
-  ResultText: 
+  StoryResults:
+  - Type: 0
+    ForceRed: 0
+    ForceBlue: 0
+    LostRed: 0
+    LostBlue: 0
+    Aggression: 0
+    ResultText: 
+  - Type: 1
+    ForceRed: 0
+    ForceBlue: 0
+    LostRed: 0
+    LostBlue: 0
+    Aggression: 0
+    ResultText: 
+  - Type: 2
+    ForceRed: 0
+    ForceBlue: 0
+    LostRed: 0
+    LostBlue: 0
+    Aggression: 0
+    ResultText: 
