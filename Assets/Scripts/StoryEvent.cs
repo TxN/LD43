@@ -18,11 +18,17 @@ public class StoryEvent : ScriptableObject
         public int LostRed = 100;
 
         public int LostBlue = 100;
+
+        public string ResultText;
     }
 
     public string Id;
 
     public EventType Type;
+
+    public bool IsReusable = false;
+
+    public int TimeToExpire = 1;
 
     public bool RedTeam;
 
@@ -37,6 +43,4 @@ public class StoryEvent : ScriptableObject
     public ResultOptions BlueButtonResult;
 
     public ResultOptions NothingResult;
-
-    public string ResultText;
 }
