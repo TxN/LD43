@@ -9,7 +9,7 @@ public class PlayerLogic : MonoBehaviour {
     public float MaxSpawnRadius = 1500;
     public float MinSpawnRadius = 1000;
     public float PlaneSpeed = 100f;
-    public float SpawnRadius = 10f;
+    public float SpawnRadius = 50f;
 
     public enum PlaneState {
         Ready,
@@ -30,16 +30,21 @@ public class PlayerLogic : MonoBehaviour {
                 _state = PlaneState.FlyOut;
                 EventManager.Fire<Event_Plane_OnTarget>(new Event_Plane_OnTarget());
             } else {
-                transform.Translate(
-                    transform.TransformDirection(
-                        Vector3.forward * PlaneSpeed * Time.deltaTime
-                    )
-                );
+                FlyForward();
             }
-        } else if (_state == PlaneState.FlyOut && distance > PlaneOnTargetDelta) {
-            EventManager.Fire<Event_Plane_FlyOut>(new Event_Plane_FlyOut());
+        } else if (_state == PlaneState.FlyOut) {
+            FlyForward();
         }
 	}
+
+    void FlyForward()
+    {
+        transform.Translate(
+            transform.TransformDirection(
+                Vector3.forward * PlaneSpeed * Time.deltaTime
+            )
+        );
+    }
 
     void OnBecameInvisible()
     {
@@ -50,6 +55,7 @@ public class PlayerLogic : MonoBehaviour {
        
         EventManager.Fire<Event_Plane_Hidden>(new Event_Plane_Hidden());
         Plane.SetActive(false);
+        _state = PlaneState.Ready;
     }
 
     public void StartFly(StoryMapPoint targetPoint) {
