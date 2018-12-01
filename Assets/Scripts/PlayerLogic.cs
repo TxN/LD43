@@ -8,7 +8,7 @@ public class PlayerLogic : MonoBehaviour {
     public float PlaneOnTargetDelta = 5f;
     public float MaxSpawnRadius = 1500;
     public float MinSpawnRadius = 1000;
-    public float PlaneSpeed = 100f;
+    public float PlaneSpeed = 10f;
     public float SpawnRadius = 50f;
 
     public enum PlaneState {
