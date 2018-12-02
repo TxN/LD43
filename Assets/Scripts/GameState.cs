@@ -48,6 +48,7 @@ public class GameState : MonoSingleton<GameState> {
 			_timer += Time.deltaTime;
 			UpdateEventSpawn();
 			UpdateSegmentShow();
+            UpdateDeathCounter();
 		}
 
 	}
@@ -63,8 +64,28 @@ public class GameState : MonoSingleton<GameState> {
 	}
 
 	void UpdateSegmentShow() {
-
+        var segmentTime = TotalGameTime / GameSegmentsCount;
+        var nextSegmentTime = segmentTime * (_shownSegmentIndex + 1);
+        if ( _timer > nextSegmentTime ) {
+            _shownSegmentIndex++;
+            ShowNewspaper(_shownSegmentIndex);
+        }
 	}
+
+    void UpdateDeathCounter() {
+        if ( Random.Range(0, 100) < 5 ) {
+            RedDeaths++;
+        }
+        if ( Random.Range(0, 100) < 5 ) {
+            BlueDeaths++;
+        }
+    }
+
+    void ShowNewspaper(int newspaperIndex) {
+        NewspaperWindow.Show(newspaperIndex);
+    }
+
+
 
 	public void AddPause(Object holder) {
 		_pauseHolders.Add(holder);
