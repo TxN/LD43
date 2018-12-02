@@ -23,15 +23,15 @@ MonoBehaviour:
   - Type: 0
     ForceRed: -1
     ForceBlue: 1
-    LostRed: 50
-    LostBlue: 10
+    LostRed: 52
+    LostBlue: 13
     Aggression: 0
     ResultText: The siege failed
   - Type: 1
     ForceRed: -5
     ForceBlue: 3
-    LostRed: 150
-    LostBlue: 5
+    LostRed: 153
+    LostBlue: 6
     Aggression: 1
     ResultText: The siege failed
   - Type: 2

@@ -23,8 +23,8 @@ MonoBehaviour:
   - Type: 0
     ForceRed: 0
     ForceBlue: -1
-    LostRed: 10
-    LostBlue: 60
+    LostRed: 13
+    LostBlue: 62
     Aggression: 0
     ResultText: The convoy is destroyed
   - Type: 1

@@ -23,8 +23,8 @@ MonoBehaviour:
   - Type: 0
     ForceRed: -2
     ForceBlue: -1
-    LostRed: 80
-    LostBlue: 20
+    LostRed: 86
+    LostBlue: 21
     Aggression: 0
     ResultText: USI forces destroyed by BERG, many civilian deaths
   - Type: 1

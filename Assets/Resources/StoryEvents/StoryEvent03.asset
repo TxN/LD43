@@ -23,8 +23,8 @@ MonoBehaviour:
   - Type: 0
     ForceRed: -1
     ForceBlue: -1
-    LostRed: 80
-    LostBlue: 80
+    LostRed: 83
+    LostBlue: 81
     Aggression: 0
     ResultText: Huge losses on both sides
   - Type: 1

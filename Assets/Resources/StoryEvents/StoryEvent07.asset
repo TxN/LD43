@@ -23,8 +23,8 @@ MonoBehaviour:
   - Type: 0
     ForceRed: -1
     ForceBlue: -1
-    LostRed: 40
-    LostBlue: 50
+    LostRed: 43
+    LostBlue: 58
     Aggression: 0
     ResultText: The combat was ineffective
   - Type: 1

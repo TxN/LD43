@@ -24,8 +24,8 @@ MonoBehaviour:
   - Type: 0
     ForceRed: 0
     ForceBlue: 0
-    LostRed: 100
-    LostBlue: 150
+    LostRed: 106
+    LostBlue: 154
     Aggression: 0
     ResultText: Many civilian deaths
   - Type: 1

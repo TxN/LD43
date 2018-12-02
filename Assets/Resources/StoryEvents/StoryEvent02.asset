@@ -23,8 +23,8 @@ MonoBehaviour:
   - Type: 0
     ForceRed: -3
     ForceBlue: 2
-    LostRed: 200
-    LostBlue: 20
+    LostRed: 212
+    LostBlue: 22
     Aggression: 0
     ResultText: The city was almost completely wiped out
   - Type: 1

@@ -23,8 +23,8 @@ MonoBehaviour:
   - Type: 0
     ForceRed: 0
     ForceBlue: 0
-    LostRed: 200
-    LostBlue: 150
+    LostRed: 206
+    LostBlue: 153
     Aggression: 0
     ResultText: Many deaths from starvation
   - Type: 1

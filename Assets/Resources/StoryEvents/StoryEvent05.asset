@@ -23,7 +23,7 @@ MonoBehaviour:
   - Type: 0
     ForceRed: -1
     ForceBlue: 1
-    LostRed: 60
+    LostRed: 61
     LostBlue: 68
     Aggression: 0
     ResultText: BERG took over the bridge
