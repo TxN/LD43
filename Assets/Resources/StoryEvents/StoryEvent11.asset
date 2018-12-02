@@ -23,17 +23,17 @@ MonoBehaviour:
   - Type: 0
     ForceRed: 0
     ForceBlue: 0
-    LostRed: 0
-    LostBlue: 0
+    LostRed: 300
+    LostBlue: 300
     Aggression: 0
-    ResultText: 
+    ResultText: Epidemic expanded, causing many deaths
   - Type: 1
     ForceRed: 0
     ForceBlue: 0
-    LostRed: 0
-    LostBlue: 0
+    LostRed: 50
+    LostBlue: 50
     Aggression: 0
-    ResultText: 
+    ResultText: Medical supplies stopped the epidemic
   - Type: 2
     ForceRed: 0
     ForceBlue: 0

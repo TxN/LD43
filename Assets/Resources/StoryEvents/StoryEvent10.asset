@@ -23,17 +23,17 @@ MonoBehaviour:
   - Type: 0
     ForceRed: 0
     ForceBlue: 0
-    LostRed: 0
-    LostBlue: 0
+    LostRed: 100
+    LostBlue: 100
     Aggression: 0
-    ResultText: 
+    ResultText: Many civilians died from starvation
   - Type: 1
     ForceRed: 0
     ForceBlue: 0
-    LostRed: 0
-    LostBlue: 0
+    LostRed: 20
+    LostBlue: 10
     Aggression: 0
-    ResultText: 
+    ResultText: Supplies eased off the starvation
   - Type: 2
     ForceRed: 0
     ForceBlue: 0

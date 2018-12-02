@@ -11,29 +11,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7357bea8359b84a0c97421d3d3c369cf, type: 3}
   m_Name: StoryEvent09
   m_EditorClassIdentifier: 
-  Id: humanitarian_00
+  Id: humanitarian_01
   Type: 1
   IsReusable: 1
   TimeToExpire: 15
   RedTeam: 1
   BlueTeam: 0
   Title: 
-  Description: Wildfires caused by usi, destroyed most of local farms, causing starvation.
+  Description: Wildfires caused by USI, destroyed most of local farms, causing starvation.
   StoryResults:
   - Type: 0
     ForceRed: 0
     ForceBlue: 0
-    LostRed: 0
-    LostBlue: 0
+    LostRed: 200
+    LostBlue: 150
     Aggression: 0
-    ResultText: 
+    ResultText: Many deaths from starvation
   - Type: 1
     ForceRed: 0
     ForceBlue: 0
-    LostRed: 0
-    LostBlue: 0
+    LostRed: 15
+    LostBlue: 15
     Aggression: 0
-    ResultText: 
+    ResultText: Supplies eased off the starvation
   - Type: 2
     ForceRed: 0
     ForceBlue: 0
