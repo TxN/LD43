@@ -2,6 +2,8 @@ using EventSys;
 using UnityEngine;
 using UnityEngine.UI;
 
+using DG.Tweening;
+
 public class StoryMapPoint : MonoBehaviour {
    
 	public EventType Type = EventType.Combat;
@@ -17,6 +19,8 @@ public class StoryMapPoint : MonoBehaviour {
 	float _liveTimer = 0f;
 	bool _isPlaneFlyIn = false;
 	StoryEvent.ResultOptions.ResultType _actionType = StoryEvent.ResultOptions.ResultType.Nothing;
+
+    Sequence _seq = null;
 
 	private void Start() {
         if ( !Image ) {
@@ -50,13 +54,21 @@ public class StoryMapPoint : MonoBehaviour {
         if ( _curEvent == null ) {
             return;
         }
+        _isPlaneFlyIn = false;
 		EventManager.Fire(new Event_StoryPointDone() { EventId = _curEvent.Id, Point = this, ActionType = _actionType });
-		Free = true;
+	//	Free = true;
 		_curEvent = null;
 		_actionType = StoryEvent.ResultOptions.ResultType.Nothing;
 		_liveTimer = 0f;
-		Image.enabled = false;
-        SelectedObj.SetActive(false);
+		
+        _seq = TweenHelper.ReplaceSequence(_seq);
+        _seq.Append(transform.DOScale(0, 0.35f));
+        _seq.AppendCallback(() =>
+        {
+            Image.enabled = false;
+            SelectedObj.SetActive(false);
+            Free = true; 
+        });
 	}
 
 	public void SetupEvent(StoryEvent storyEvent) {
@@ -74,10 +86,13 @@ public class StoryMapPoint : MonoBehaviour {
 		Free = false;
 		_liveTimer = 0f;
 		_actionType = StoryEvent.ResultOptions.ResultType.Nothing;
+        transform.localScale = Vector3.zero;
+        _seq = TweenHelper.ReplaceSequence(_seq);
+        _seq.Append(transform.DOScale(1, 0.35f));
 	}
 
 	public void OpenActionWindow() {
-		if ( _curEvent == null ) {
+		if ( _curEvent == null || _isPlaneFlyIn ) {
 			return;
 		}
 		GameState.Instance.TryOpenActionWindow(this, _curEvent);

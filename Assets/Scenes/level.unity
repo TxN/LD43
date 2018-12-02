@@ -138,7 +138,7 @@ RectTransform:
   m_GameObject: {fileID: 22135017}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 201437286}
   m_RootOrder: 0
@@ -146,7 +146,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2880, y: 2160}
+  m_SizeDelta: {x: 2049, y: 1152}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &22135019
 MonoBehaviour:
@@ -421,7 +421,7 @@ RectTransform:
   - {fileID: 747680409}
   - {fileID: 1432114210}
   m_Father: {fileID: 275195836}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -825,7 +825,7 @@ RectTransform:
   - {fileID: 2002990215}
   - {fileID: 776171838}
   m_Father: {fileID: 275195836}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1070,7 +1070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1084,14 +1084,13 @@ MonoBehaviour:
     m_BestFit: 1
     m_MinSize: 3
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'TEST TEXT TEST TEXT TEST TEXT TEST TEXT TEST TEXT TEST TEXT TEST TEXT TEST
-    TEXT TEST TEXT TEST TEXT TEST TEXT TEST TEXT '
+  m_Text: USI artillery was destroyed
 --- !u!222 &264615495
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1187,8 +1186,8 @@ RectTransform:
   - {fileID: 763546253}
   - {fileID: 1776862060}
   - {fileID: 2102783468}
-  - {fileID: 171350996}
   - {fileID: 99613474}
+  - {fileID: 171350996}
   - {fileID: 256414829}
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -1368,7 +1367,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 309.1, y: 191.53}
+  m_AnchoredPosition: {x: 340, y: 207}
   m_SizeDelta: {x: 450, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &319686713
@@ -2439,7 +2438,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.084905684, g: 0.084905684, b: 0.084905684, a: 0.24313726}
+  m_Color: {r: 0.084905684, g: 0.084905684, b: 0.084905684, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2767,7 +2766,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2811,8 +2810,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -3.91, y: -229.69}
-  m_SizeDelta: {x: 679.26, y: 237.53}
+  m_AnchoredPosition: {x: -0, y: -217.1}
+  m_SizeDelta: {x: 682.6, y: 242.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &922415943
 GameObject:
@@ -3210,7 +3209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3253,7 +3252,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -46.03}
+  m_AnchoredPosition: {x: 0, y: -61}
   m_SizeDelta: {x: 671.45, y: 69.95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1081356339
@@ -3288,7 +3287,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -43.300003}
+  m_AnchoredPosition: {x: 0, y: -57}
   m_SizeDelta: {x: 0, y: 86.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1081356341
@@ -3303,7 +3302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3323,7 +3322,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Battle Log
+  m_Text: 'Mission Result:'
 --- !u!222 &1081356342
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5036,7 +5035,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -731.16}
-  m_SizeDelta: {x: 130, y: 270.4}
+  m_SizeDelta: {x: 269.7143, y: 145.14285}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1290364499
 MonoBehaviour:
@@ -5053,7 +5052,7 @@ MonoBehaviour:
   PlaneOnTargetDelta: 5
   MaxSpawnRadius: 1500
   MinSpawnRadius: 1000
-  PlaneSpeed: 90
+  PlaneSpeed: 150
   SpawnRadius: 900
   SpawnPoints:
   - {fileID: 2133327092}
@@ -5254,8 +5253,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: cad57c9e914edea4db0c894080fa8910, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -5649,7 +5648,12 @@ MonoBehaviour:
   - {fileID: 1784010543}
   - {fileID: 1269991637}
   Events: []
-  FirstEvents: []
+  FirstEvents:
+  - humanitarian_03
+  - humanitarian_02
+  - combat_00
+  - combat_08
+  - combat_01
 --- !u!114 &1549778667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5667,9 +5671,9 @@ MonoBehaviour:
   StoryEventManager: {fileID: 1549778666}
   Player: {fileID: 1290364499}
   Fader: {fileID: 256414830}
-  MinEventSpawnDelay: 5
-  MaxEventSpawnDelay: 10
-  TotalGameTime: 300
+  MinEventSpawnDelay: 3
+  MaxEventSpawnDelay: 7
+  TotalGameTime: 180
   GameSegmentsCount: 6
 --- !u!4 &1549778668
 Transform:
@@ -7048,7 +7052,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -1.1, y: 46}
+  m_AnchoredPosition: {x: -1.1, y: 53}
   m_SizeDelta: {x: 634.6, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1993248788
@@ -7470,7 +7474,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2102783468
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7486,10 +7490,10 @@ RectTransform:
   m_Father: {fileID: 275195836}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 224, y: 401}
-  m_SizeDelta: {x: 396.1, y: 397.4}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 224, y: -234}
+  m_SizeDelta: {x: 396.1, y: 397.40002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2102783469
 MonoBehaviour:
@@ -7522,8 +7526,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: cad57c9e914edea4db0c894080fa8910, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

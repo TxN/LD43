@@ -46,6 +46,8 @@ public class ActionWindow : MonoBehaviour {
 		BlueWarButton.gameObject.SetActive(storyEvent.BlueTeam == true);
 		_curEvent = storyEvent;
 		_curPoint = point;
+        Title.text = _curEvent.Title;
+        Description.text = _curEvent.Description;
 	}
 
 	public void Update() {

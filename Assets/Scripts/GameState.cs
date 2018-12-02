@@ -81,7 +81,7 @@ public class GameState : MonoSingleton<GameState> {
 	void UpdateSegmentShow() {
         var segmentTime = TotalGameTime / GameSegmentsCount;
         var nextSegmentTime = segmentTime * (_shownSegmentIndex + 1);
-        if ( _timer > nextSegmentTime ) {
+        if ( _timer > nextSegmentTime && ActionWindow.CanShow() ) {
             _shownSegmentIndex++;
             ShowNewspaper(_shownSegmentIndex);
         }

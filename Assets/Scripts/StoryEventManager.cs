@@ -50,7 +50,7 @@ public class StoryEventManager : MonoBehaviour {
         for ( int i = 0; i < 50; i++ ) {
             var index = Random.Range(0, Events.Count);
             if ( !_usedEvents.Contains(Events[i].Id) || Events[i].IsReusable ) {
-                return Events[i];
+                return Events[index];
             }
         }
 
