@@ -1,6 +1,7 @@
 using EventSys;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameState : MonoSingleton<GameState> {
 
@@ -12,6 +13,7 @@ public class GameState : MonoSingleton<GameState> {
 	[Header("Scene Objects")]
 	public StoryEventManager StoryEventManager = null;
 	public PlayerLogic Player = null;
+    public FadeScreen  Fader  = null;
 
 	[Header("Settings")]
 	public float MinEventSpawnDelay = 5;
@@ -53,11 +55,15 @@ public class GameState : MonoSingleton<GameState> {
 	}
 
 	void Update() {
+        if ( Input.GetKeyDown(KeyCode.P) ) { //Quick skip
+            _timer = TotalGameTime * 0.95f;
+        }
 		if ( !IsPause ) {
 			_timer += Time.deltaTime;
 			UpdateEventSpawn();
 			UpdateSegmentShow();
             UpdateDeathCounter();
+            CheckEndgame();
 		}
 
 	}
@@ -93,7 +99,17 @@ public class GameState : MonoSingleton<GameState> {
     void CheckEndgame() {
         if ( CurrentCompletionPercent > 1.01f ) {
             _pauseHolders.Add(this);
+        } else {
+            return;
         }
+        ActionWindow.CloseWindow();
+        Invoke("LoadEndingScene", 2f);
+        Fader.gameObject.SetActive(true);
+        Fader.FadeBlack(1.5f);
+    }
+
+    void LoadEndingScene() {
+        SceneManager.LoadScene("EndingScene");
     }
 
     void ShowNewspaper(int newspaperIndex) {

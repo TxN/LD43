@@ -15,7 +15,7 @@ public class FinalStatsHolder : MonoSingleton<FinalStatsHolder> {
         DontDestroyOnLoad(this.gameObject);
     }
 
-    void Destroy() {
+    public void Destroy() {
         Destroy(this.gameObject);
     }
 }
