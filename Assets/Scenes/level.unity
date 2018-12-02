@@ -854,16 +854,16 @@ MonoBehaviour:
   Title: {fileID: 2091915503}
   Description: {fileID: 1246093171}
   Newspapers:
-  - Title: Daily News
+  - Title: 
     Description: "For the last couple of months we have been witnessing an increasing
-      number of incidents involving military forces of two fractions of the I** island.
-      Some cases led to many injured and dead civilians. It\u2019s clear now that
-      the ice on this frozen for many years conflict between USI and BERD is melting
-      quickly. This week, United Nations Security Council stated that in order to
-      minimize civilian deaths, the new AI system will be involved."
+      number of incidents involving military forces of two fractions of the Zaynos
+      island. Some cases led to many injured and dead civilians. It\u2019s clear now
+      that the ice on this frozen for many years conflict between USI and BERD is
+      melting quickly. This week, United Nations Security Council stated that in order
+      to minimize civilian deaths, the new AI system will be involved."
   - Title: 
     Description: "It\u2019s been a week since the start of AI program on the island
-      I** and the massive positive shift is already obvious. UN report that usage
+      Zaynos and the massive positive shift is already obvious. UN report that usage
       of pacifier allowed to decrease civil deaths compared to normal airstrikes not
       less than 30%!  "
   - Title: 
@@ -873,15 +873,15 @@ MonoBehaviour:
       and BERD will think twice next time they decide to use a chemical weapon. '
   - Title: 
     Description: "Our reporters constantly analyzing reports from the UN on the situation
-      on the I** Island. Unfortunately we don\u2019t have any personnel on the actual
-      battlefield because it\u2019s too dangerous due to unpredictable nature of the
-      conflict and the two main sides involved. Not only it\u2019s dangerous but also
-      unnecessary because there\u2019s no reason to question the figures we get from
-      the UN. And the figures say that the peace is not far."
+      on the Zaynos Island. Unfortunately we don\u2019t have any personnel on the
+      actual battlefield because it\u2019s too dangerous due to unpredictable nature
+      of the conflict and the two main sides involved. Not only it\u2019s dangerous
+      but also unnecessary because there\u2019s no reason to question the figures
+      we get from the UN. And the figures say that the peace is not far."
   - Title: 
-    Description: "It\u2019s the week 4 of the Peacemaker AI program. We witness many
-      signs of improvement of the situation on the island. It seems that both sides
-      are ran out of chemical weapons and now spending their money on counter-air
+    Description: "It\u2019s the week four of the Peacemaker AI program. We witness
+      many signs of improvement of the situation on the island. It seems that both
+      sides are ran out of chemical weapons and now spending their money on counter-air
       systems from black market. "
   - Title: 
     Description: "During last week we saw an increasing deployment of counter-air
@@ -890,7 +890,7 @@ MonoBehaviour:
       are extremely unhappy about this sharp and precise like a surgeon\u2019s scalpel
       intervention of the free world."
   - Title: 
-    Description: "In this issue read an exclusive interview with a local of the I**
+    Description: "In this issue read an exclusive interview with a local of the Zaynos
       island. She\u2019s a mother of two, lost one of her children in the conflict.
       The woman expressed her endorsement of the peacemaker program and said: The
       air force of the free world is the only hope for my homeland\u201D."
