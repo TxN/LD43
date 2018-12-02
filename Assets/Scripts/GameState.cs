@@ -21,19 +21,28 @@ public class GameState : MonoSingleton<GameState> {
 
 	HashSet<Object> _pauseHolders = new HashSet<Object>();
 
-	//Stats
-	public int RedPower = 0;
-	public int BluePower = 0;
-	public int RedDeaths = 0;
-	public int BlueDeaths = 0;
-	public int Aggression = 0;
-	public int ActionCount = 0;
-
 	float _timer = 0f;
 	float _lastEventSpawnTime = 0f;
 	float _nexEventSpawnTime  = 3f;
 	int   _shownSegmentIndex  = -1;
 
+    public int RedDeaths {
+        get {
+            return FinalStatsHolder.Instance.RedDeaths;
+        }
+        set {
+            FinalStatsHolder.Instance.RedDeaths = value;
+        }
+    }
+
+    public int BlueDeaths {
+        get {
+            return FinalStatsHolder.Instance.BlueDeaths;
+        }
+        set {
+            FinalStatsHolder.Instance.BlueDeaths = value;
+        }
+    }
 
 	private void Start() {
 		EventManager.Subscribe<Event_StoryPointDone>(this,OnStoryPointDone);
@@ -81,11 +90,15 @@ public class GameState : MonoSingleton<GameState> {
         }
     }
 
+    void CheckEndgame() {
+        if ( CurrentCompletionPercent > 1.01f ) {
+            _pauseHolders.Add(this);
+        }
+    }
+
     void ShowNewspaper(int newspaperIndex) {
         NewspaperWindow.Show(newspaperIndex);
     }
-
-
 
 	public void AddPause(Object holder) {
 		_pauseHolders.Add(holder);
@@ -142,13 +155,15 @@ public class GameState : MonoSingleton<GameState> {
 			return;
 		}
 
-		RedPower   += resultStats.ForceRed;
-		BluePower  += resultStats.ForceBlue;
-		RedDeaths  += resultStats.LostRed;
-		BlueDeaths += resultStats.LostBlue;
-		Aggression += resultStats.Aggression;
+        var fs = FinalStatsHolder.Instance;
+
+        fs.RedPower += resultStats.ForceRed;
+        fs.BluePower += resultStats.ForceBlue;
+        fs.RedDeaths += resultStats.LostRed;
+        fs.BlueDeaths += resultStats.LostBlue;
+        fs.Aggression += resultStats.Aggression;
 		if ( resultType != StoryEvent.ResultOptions.ResultType.Nothing ) {
-			ActionCount++;
+            fs.ActionCount++;
 		}
 	}
 

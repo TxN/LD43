@@ -35,7 +35,9 @@ public class NewspaperWindow : MonoBehaviour {
 
     void OnDestroy() {
         _seq = TweenHelper.ResetSequence(_seq);
-        GameState.Instance.RemovePause(this);
+        if ( GameState.Instance != null ) {
+            GameState.Instance.RemovePause(this);
+        }
     }
 }
 

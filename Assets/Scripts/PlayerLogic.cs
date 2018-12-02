@@ -29,6 +29,9 @@ public class PlayerLogic : MonoBehaviour {
 	}
 
 	private void Update() {
+        if ( GameState.Instance.IsPause ) {
+            return;
+        }
 		if ( _state != PlaneState.Ready && _currentPoint != null ) {
 
 			float distance = Vector2.Distance(transform.position, _currentPoint.transform.position);
