@@ -54,7 +54,6 @@ public class StoryMapPoint : MonoBehaviour {
         if ( _curEvent == null ) {
             return;
         }
-        _isPlaneFlyIn = false;
 		EventManager.Fire(new Event_StoryPointDone() { EventId = _curEvent.Id, Point = this, ActionType = _actionType });
 	//	Free = true;
 		_curEvent = null;
@@ -67,8 +66,10 @@ public class StoryMapPoint : MonoBehaviour {
         {
             Image.enabled = false;
             SelectedObj.SetActive(false);
-            Free = true; 
+            Free = true;
+            _isPlaneFlyIn = false;
         });
+        
 	}
 
 	public void SetupEvent(StoryEvent storyEvent) {
@@ -108,6 +109,9 @@ public class StoryMapPoint : MonoBehaviour {
 	}
 
 	void OnPlaneOnTarget(Event_Plane_OnTarget e) {
+        if ( !_isPlaneFlyIn ) {
+            return;
+        }
         if ( e.Point != this ) {
             return;
         }

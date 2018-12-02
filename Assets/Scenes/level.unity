@@ -608,7 +608,7 @@ GameObject:
   m_Layer: 5
   m_Name: point (4)
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1560,7 +1560,7 @@ GameObject:
   m_Layer: 5
   m_Name: point (5)
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1728,7 +1728,7 @@ GameObject:
   m_Layer: 5
   m_Name: point (1)
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1870,7 +1870,7 @@ GameObject:
   m_Layer: 5
   m_Name: point (2)
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2393,7 +2393,7 @@ GameObject:
   m_Layer: 5
   m_Name: point (8)
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2923,7 +2923,7 @@ GameObject:
   m_Layer: 5
   m_Name: point (10)
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3486,7 +3486,7 @@ GameObject:
   m_Layer: 5
   m_Name: point (9)
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4341,7 +4341,7 @@ GameObject:
   m_Layer: 5
   m_Name: point (7)
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5076,7 +5076,7 @@ MonoBehaviour:
   PlaneOnTargetDelta: 5
   MaxSpawnRadius: 1500
   MinSpawnRadius: 1000
-  PlaneSpeed: 150
+  PlaneSpeed: 200
   SpawnRadius: 900
   SpawnPoints:
   - {fileID: 2133327092}
@@ -5196,7 +5196,7 @@ GameObject:
   m_Layer: 5
   m_Name: point (3)
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5676,7 +5676,7 @@ MonoBehaviour:
   - humanitarian_03
   - humanitarian_02
   - combat_00
-  - combat_08
+  - humanitarian_00
   - combat_01
 --- !u!114 &1549778667
 MonoBehaviour:
@@ -6864,7 +6864,7 @@ GameObject:
   m_Layer: 5
   m_Name: point (6)
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -7422,7 +7422,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2091915502
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7645,7 +7645,7 @@ GameObject:
   m_Layer: 5
   m_Name: point
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
