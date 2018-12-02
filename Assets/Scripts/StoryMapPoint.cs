@@ -3,7 +3,9 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class StoryMapPoint : MonoBehaviour {
+   
 	public EventType Type = EventType.Combat;
+    public GameObject SelectedObj = null;
 	public bool Free = true;
 
 	public Image Image = null;
@@ -17,6 +19,12 @@ public class StoryMapPoint : MonoBehaviour {
 	StoryEvent.ResultOptions.ResultType _actionType = StoryEvent.ResultOptions.ResultType.Nothing;
 
 	private void Start() {
+        if ( !Image ) {
+            Image = GetComponent<Image>();
+        }
+        if ( Free ) {
+            Image.enabled = false;
+        }
 		EventManager.Subscribe<Event_PlayerActionMade>(this, OnPlayerActionMade);
 		EventManager.Subscribe<Event_Plane_OnTarget>(this, OnPlaneOnTarget);
 	}
@@ -39,18 +47,20 @@ public class StoryMapPoint : MonoBehaviour {
 	}
 
 	void ExpireEvent() {
+        if ( _curEvent == null ) {
+            return;
+        }
 		EventManager.Fire(new Event_StoryPointDone() { EventId = _curEvent.Id, Point = this, ActionType = _actionType });
 		Free = true;
 		_curEvent = null;
 		_actionType = StoryEvent.ResultOptions.ResultType.Nothing;
 		_liveTimer = 0f;
 		Image.enabled = false;
+        SelectedObj.SetActive(false);
 	}
 
 	public void SetupEvent(StoryEvent storyEvent) {
-		if ( !Image ) {
-			Image = GetComponentInChildren<Image>();
-		}
+
 		if ( storyEvent.Type == EventType.Combat ) {
 			Image.sprite = WarIcon;
 		}
@@ -77,11 +87,15 @@ public class StoryMapPoint : MonoBehaviour {
 		if ( e.Point != this ) {
 			return;
 		}
+        SelectedObj.SetActive(true);
 		_actionType = e.ActionType;
 		_isPlaneFlyIn = true;
 	}
 
 	void OnPlaneOnTarget(Event_Plane_OnTarget e) {
+        if ( e.Point != this ) {
+            return;
+        }
 		ExpireEvent();
 	}
 
