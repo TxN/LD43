@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7357bea8359b84a0c97421d3d3c369cf, type: 3}
   m_Name: StoryEvent07
   m_EditorClassIdentifier: 
-  Id: 04
+  Id: combat_07
   Type: 0
   IsReusable: 1
   TimeToExpire: 15
@@ -21,23 +21,23 @@ MonoBehaviour:
   Description: Substantial number of infantry units engaged in combat near a village.
   StoryResults:
   - Type: 0
-    ForceRed: 0
-    ForceBlue: 0
-    LostRed: 0
-    LostBlue: 0
+    ForceRed: -1
+    ForceBlue: -1
+    LostRed: 40
+    LostBlue: 50
     Aggression: 0
-    ResultText: 
+    ResultText: The combat was ineffective
   - Type: 1
-    ForceRed: 0
-    ForceBlue: 0
-    LostRed: 0
-    LostBlue: 0
-    Aggression: 0
-    ResultText: 
+    ForceRed: -2
+    ForceBlue: 1
+    LostRed: 140
+    LostBlue: 40
+    Aggression: 1
+    ResultText: Massive damage to USI forces
   - Type: 2
-    ForceRed: 0
-    ForceBlue: 0
-    LostRed: 0
-    LostBlue: 0
-    Aggression: 0
-    ResultText: 
+    ForceRed: 1
+    ForceBlue: -2
+    LostRed: 30
+    LostBlue: 150
+    Aggression: 1
+    ResultText: Massive damage to USI forces

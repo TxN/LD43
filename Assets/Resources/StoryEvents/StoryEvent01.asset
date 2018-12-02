@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7357bea8359b84a0c97421d3d3c369cf, type: 3}
   m_Name: StoryEvent01
   m_EditorClassIdentifier: 
-  Id: 01
+  Id: combat_01
   Type: 0
   IsReusable: 1
   TimeToExpire: 15
@@ -21,23 +21,23 @@ MonoBehaviour:
   Description: USI forces are surrounded. Many civilian hostages.
   StoryResults:
   - Type: 0
-    ForceRed: 0
-    ForceBlue: 0
-    LostRed: 0
-    LostBlue: 0
+    ForceRed: -2
+    ForceBlue: -1
+    LostRed: 80
+    LostBlue: 20
     Aggression: 0
-    ResultText: 
+    ResultText: USI forces destroyed by BERG, many civilian deaths
   - Type: 1
-    ForceRed: 0
+    ForceRed: -2
     ForceBlue: 0
-    LostRed: 0
-    LostBlue: 0
-    Aggression: 0
-    ResultText: 
+    LostRed: 80
+    LostBlue: 10
+    Aggression: 2
+    ResultText: USI forces destroyed, many civilian deaths
   - Type: 2
-    ForceRed: 0
-    ForceBlue: 0
-    LostRed: 0
-    LostBlue: 0
-    Aggression: 0
-    ResultText: 
+    ForceRed: -1
+    ForceBlue: -3
+    LostRed: 30
+    LostBlue: 90
+    Aggression: 2
+    ResultText: USI forces managed to escape, some civilian deaths

@@ -11,9 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7357bea8359b84a0c97421d3d3c369cf, type: 3}
   m_Name: StoryEvent02
   m_EditorClassIdentifier: 
-  Id: 02
+  Id: combat_02
   Type: 0
-  IsReusable: 1
+  IsReusable: 0
   TimeToExpire: 15
   RedTeam: 1
   BlueTeam: 1
@@ -21,23 +21,23 @@ MonoBehaviour:
   Description: Berd is using artillery to reclaim a city.
   StoryResults:
   - Type: 0
-    ForceRed: 0
-    ForceBlue: 0
-    LostRed: 0
-    LostBlue: 0
+    ForceRed: -3
+    ForceBlue: 2
+    LostRed: 200
+    LostBlue: 20
     Aggression: 0
-    ResultText: 
+    ResultText: The city was almost completely wiped out
   - Type: 1
-    ForceRed: 0
-    ForceBlue: 0
-    LostRed: 0
+    ForceRed: -3
+    ForceBlue: 2
+    LostRed: 200
     LostBlue: 0
-    Aggression: 0
-    ResultText: 
+    Aggression: 3
+    ResultText: The city was almost completely wiped out
   - Type: 2
     ForceRed: 0
-    ForceBlue: 0
-    LostRed: 0
-    LostBlue: 0
-    Aggression: 0
-    ResultText: 
+    ForceBlue: -4
+    LostRed: 50
+    LostBlue: 150
+    Aggression: 1
+    ResultText: A substantial damage was inflicted on BERG's forces.

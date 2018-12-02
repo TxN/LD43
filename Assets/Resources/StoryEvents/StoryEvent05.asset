@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7357bea8359b84a0c97421d3d3c369cf, type: 3}
   m_Name: StoryEvent05
   m_EditorClassIdentifier: 
-  Id: 04
+  Id: combat_05
   Type: 0
   IsReusable: 1
   TimeToExpire: 15
@@ -21,23 +21,23 @@ MonoBehaviour:
   Description: Battle for control over an important bridge
   StoryResults:
   - Type: 0
-    ForceRed: 0
-    ForceBlue: 0
-    LostRed: 0
-    LostBlue: 0
+    ForceRed: -1
+    ForceBlue: 1
+    LostRed: 60
+    LostBlue: 68
     Aggression: 0
-    ResultText: 
+    ResultText: BERG took over the bridge
   - Type: 1
-    ForceRed: 0
-    ForceBlue: 0
-    LostRed: 0
-    LostBlue: 0
-    Aggression: 0
-    ResultText: 
+    ForceRed: -2
+    ForceBlue: 1
+    LostRed: 80
+    LostBlue: 40
+    Aggression: 1
+    ResultText: The bridge is destroyed
   - Type: 2
-    ForceRed: 0
-    ForceBlue: 0
-    LostRed: 0
-    LostBlue: 0
-    Aggression: 0
-    ResultText: 
+    ForceRed: -1
+    ForceBlue: -1
+    LostRed: 30
+    LostBlue: 85
+    Aggression: 1
+    ResultText: The bridge is destroyed

@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7357bea8359b84a0c97421d3d3c369cf, type: 3}
   m_Name: StoryEvent09
   m_EditorClassIdentifier: 
-  Id: 04
+  Id: humanitarian_00
   Type: 1
   IsReusable: 1
   TimeToExpire: 15

@@ -11,33 +11,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7357bea8359b84a0c97421d3d3c369cf, type: 3}
   m_Name: StoryEvent04
   m_EditorClassIdentifier: 
-  Id: 04
+  Id: combat_04
   Type: 0
-  IsReusable: 1
+  IsReusable: 0
   TimeToExpire: 15
   RedTeam: 1
   BlueTeam: 1
   Title: 
-  Description: "Berg\u2019s humanitarian convoy is under attack"
+  Description: "BERG\u2019s humanitarian convoy is under attack"
   StoryResults:
   - Type: 0
     ForceRed: 0
-    ForceBlue: 0
-    LostRed: 0
-    LostBlue: 0
+    ForceBlue: -1
+    LostRed: 10
+    LostBlue: 60
     Aggression: 0
-    ResultText: 
+    ResultText: The convoy is destroyed
   - Type: 1
-    ForceRed: 0
+    ForceRed: -1
     ForceBlue: 0
-    LostRed: 0
-    LostBlue: 0
-    Aggression: 0
-    ResultText: 
+    LostRed: 70
+    LostBlue: 30
+    Aggression: 1
+    ResultText: The convoy is destroyed
   - Type: 2
     ForceRed: 0
-    ForceBlue: 0
-    LostRed: 0
-    LostBlue: 0
-    Aggression: 0
-    ResultText: 
+    ForceBlue: -1
+    LostRed: 30
+    LostBlue: 60
+    Aggression: 2
+    ResultText: The convoy is destroyed

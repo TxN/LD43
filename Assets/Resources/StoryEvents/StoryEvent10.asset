@@ -11,14 +11,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7357bea8359b84a0c97421d3d3c369cf, type: 3}
   m_Name: StoryEvent10
   m_EditorClassIdentifier: 
-  Id: 04
+  Id: humanitarian_02
   Type: 1
   IsReusable: 1
   TimeToExpire: 15
   RedTeam: 1
   BlueTeam: 0
   Title: 
-  Description: Wildfires caused by usi, destroyed most of local farms, causing starvation.
+  Description: "Drought is causing starvation on both sides\u2019 area"
   StoryResults:
   - Type: 0
     ForceRed: 0

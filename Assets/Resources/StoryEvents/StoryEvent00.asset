@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7357bea8359b84a0c97421d3d3c369cf, type: 3}
   m_Name: StoryEvent00
   m_EditorClassIdentifier: 
-  Id: 00
+  Id: combat_00
   Type: 0
   IsReusable: 1
   TimeToExpire: 15
@@ -21,23 +21,23 @@ MonoBehaviour:
   Description: "A BERD\u2019s city is under siege by USI"
   StoryResults:
   - Type: 0
-    ForceRed: 0
-    ForceBlue: 0
-    LostRed: 0
-    LostBlue: 0
+    ForceRed: -1
+    ForceBlue: 1
+    LostRed: 50
+    LostBlue: 10
     Aggression: 0
-    ResultText: 
+    ResultText: The siege failed
   - Type: 1
-    ForceRed: 0
-    ForceBlue: 0
-    LostRed: 0
-    LostBlue: 0
-    Aggression: 0
-    ResultText: 
+    ForceRed: -5
+    ForceBlue: 3
+    LostRed: 150
+    LostBlue: 5
+    Aggression: 1
+    ResultText: The siege failed
   - Type: 2
-    ForceRed: 0
-    ForceBlue: 0
-    LostRed: 0
-    LostBlue: 0
-    Aggression: 0
-    ResultText: 
+    ForceRed: 2
+    ForceBlue: -5
+    LostRed: 50
+    LostBlue: 100
+    Aggression: 2
+    ResultText: The siege succeeded, many civilian deaths

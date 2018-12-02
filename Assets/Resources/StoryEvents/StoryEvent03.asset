@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7357bea8359b84a0c97421d3d3c369cf, type: 3}
   m_Name: StoryEvent03
   m_EditorClassIdentifier: 
-  Id: 03
+  Id: combat_03
   Type: 0
   IsReusable: 1
   TimeToExpire: 15
@@ -21,23 +21,23 @@ MonoBehaviour:
   Description: Chemical weapon is used on infantry by both sides
   StoryResults:
   - Type: 0
-    ForceRed: 0
-    ForceBlue: 0
-    LostRed: 0
-    LostBlue: 0
+    ForceRed: -1
+    ForceBlue: -1
+    LostRed: 80
+    LostBlue: 80
     Aggression: 0
-    ResultText: 
+    ResultText: Huge losses on both sides
   - Type: 1
-    ForceRed: 0
-    ForceBlue: 0
-    LostRed: 0
-    LostBlue: 0
-    Aggression: 0
-    ResultText: 
+    ForceRed: -2
+    ForceBlue: -1
+    LostRed: 180
+    LostBlue: 70
+    Aggression: 1
+    ResultText: Massive losses on both sides
   - Type: 2
-    ForceRed: 0
-    ForceBlue: 0
-    LostRed: 0
-    LostBlue: 0
-    Aggression: 0
-    ResultText: 
+    ForceRed: -1
+    ForceBlue: -2
+    LostRed: 70
+    LostBlue: 180
+    Aggression: 1
+    ResultText: Massive losses on both sides

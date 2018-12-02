@@ -11,33 +11,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7357bea8359b84a0c97421d3d3c369cf, type: 3}
   m_Name: StoryEvent06
   m_EditorClassIdentifier: 
-  Id: 04
+  Id: combat_06
   Type: 0
   IsReusable: 1
   TimeToExpire: 15
   RedTeam: 1
   BlueTeam: 1
   Title: 
-  Description: "Berd\u2019s armored vehicles is under artillery fire"
+  Description: "BERD\u2019s armored vehicles is under artillery fire"
   StoryResults:
   - Type: 0
-    ForceRed: 0
-    ForceBlue: 0
-    LostRed: 0
-    LostBlue: 0
+    ForceRed: 1
+    ForceBlue: -1
+    LostRed: 10
+    LostBlue: 40
     Aggression: 0
-    ResultText: 
+    ResultText: All BERG's units were destroyed
   - Type: 1
-    ForceRed: 0
+    ForceRed: -2
     ForceBlue: 0
-    LostRed: 0
-    LostBlue: 0
-    Aggression: 0
-    ResultText: 
+    LostRed: 100
+    LostBlue: 20
+    Aggression: 1
+    ResultText: USI's artillery was destroyed
   - Type: 2
-    ForceRed: 0
-    ForceBlue: 0
+    ForceRed: 2
+    ForceBlue: -1
     LostRed: 0
-    LostBlue: 0
-    Aggression: 0
-    ResultText: 
+    LostBlue: 40
+    Aggression: 2
+    ResultText: All BERG's units were destroyed
