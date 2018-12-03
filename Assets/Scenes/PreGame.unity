@@ -338,10 +338,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "You are the result of a year-long experiment carried out in order to create
-    a new military AI system that would base it\u2019s actions on the deep understanding
-    of general public\u2019s morals and ethics. After training on simulations it\u2019s
-    time to test you in real world."
+  m_Text: "You are the prototype of a military aircraft AI system that bases its actions
+    on the deep understanding of the general public\u2019s morals. It\u2019s time
+    to test you in the real world."
 --- !u!222 &885842263
 CanvasRenderer:
   m_ObjectHideFlags: 0
