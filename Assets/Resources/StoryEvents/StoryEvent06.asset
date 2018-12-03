@@ -18,7 +18,7 @@ MonoBehaviour:
   RedTeam: 1
   BlueTeam: 1
   Title: 
-  Description: "BERD\u2019s armored vehicles is under artillery fire"
+  Description: "BERD\u2019s armored vehicles are under artillery fire."
   StoryResults:
   - Type: 0
     ForceRed: 1
@@ -26,18 +26,18 @@ MonoBehaviour:
     LostRed: 13
     LostBlue: 41
     Aggression: 0
-    ResultText: All BERG's units were destroyed
+    ResultText: All BERG units destroyed.
   - Type: 1
     ForceRed: -2
     ForceBlue: 0
     LostRed: 100
     LostBlue: 20
     Aggression: 1
-    ResultText: USI's artillery was destroyed
+    ResultText: USI's artillery destroyed.
   - Type: 2
     ForceRed: 2
     ForceBlue: -1
     LostRed: 0
     LostBlue: 85
     Aggression: 2
-    ResultText: All BERG's units were destroyed
+    ResultText: All BERG units destroyed.

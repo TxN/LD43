@@ -40,4 +40,4 @@ MonoBehaviour:
     LostRed: 50
     LostBlue: 100
     Aggression: 3
-    ResultText: The siege succeeded, many civilian deaths
+    ResultText: The siege succeeded, many causalities

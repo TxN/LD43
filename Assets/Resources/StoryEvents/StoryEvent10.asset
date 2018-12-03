@@ -18,7 +18,7 @@ MonoBehaviour:
   RedTeam: 1
   BlueTeam: 0
   Title: 
-  Description: "Drought is causing starvation on both sides\u2019 area"
+  Description: "Drought is causing starvation on both sides\u2019 area."
   StoryResults:
   - Type: 0
     ForceRed: 0
@@ -26,14 +26,14 @@ MonoBehaviour:
     LostRed: 103
     LostBlue: 107
     Aggression: 0
-    ResultText: Many civilians died from starvation
+    ResultText: Many civilians died from starvation.
   - Type: 1
     ForceRed: 0
     ForceBlue: 0
     LostRed: 20
     LostBlue: 10
     Aggression: 0
-    ResultText: Supplies eased off the starvation
+    ResultText: Supplies eased off the starvation.
   - Type: 2
     ForceRed: 0
     ForceBlue: 0

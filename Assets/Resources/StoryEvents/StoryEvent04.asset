@@ -18,7 +18,7 @@ MonoBehaviour:
   RedTeam: 1
   BlueTeam: 1
   Title: 
-  Description: "BERD\u2019s humanitarian convoy is under attack"
+  Description: "BERD\u2019s humanitarian convoy is under attack."
   StoryResults:
   - Type: 0
     ForceRed: 0
@@ -26,18 +26,18 @@ MonoBehaviour:
     LostRed: 13
     LostBlue: 62
     Aggression: 0
-    ResultText: The convoy is destroyed
+    ResultText: The convoy destroyed.
   - Type: 1
     ForceRed: -1
     ForceBlue: 0
     LostRed: 73
     LostBlue: 24
     Aggression: 1
-    ResultText: The convoy is destroyed
+    ResultText: The convoy destroyed.
   - Type: 2
     ForceRed: 0
     ForceBlue: -2
     LostRed: 24
     LostBlue: 73
     Aggression: 3
-    ResultText: The convoy is destroyed
+    ResultText: The convoy destroyed.

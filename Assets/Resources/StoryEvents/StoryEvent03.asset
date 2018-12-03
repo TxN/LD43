@@ -18,7 +18,7 @@ MonoBehaviour:
   RedTeam: 1
   BlueTeam: 1
   Title: 
-  Description: Chemical weapon is used on infantry by both sides
+  Description: Chemical weapon is used on infantry by both sides.
   StoryResults:
   - Type: 0
     ForceRed: -1
@@ -26,18 +26,18 @@ MonoBehaviour:
     LostRed: 83
     LostBlue: 81
     Aggression: 0
-    ResultText: Huge losses on both sides
+    ResultText: Huge losses on both sides.
   - Type: 1
     ForceRed: -2
     ForceBlue: -1
     LostRed: 214
     LostBlue: 64
     Aggression: 1
-    ResultText: Massive losses on both sides
+    ResultText: Massive losses on both sides.
   - Type: 2
     ForceRed: -1
     ForceBlue: -2
     LostRed: 62
     LostBlue: 204
     Aggression: 1
-    ResultText: Massive losses on both sides
+    ResultText: Massive losses on both sides.

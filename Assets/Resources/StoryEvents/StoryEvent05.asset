@@ -18,7 +18,7 @@ MonoBehaviour:
   RedTeam: 1
   BlueTeam: 1
   Title: 
-  Description: Battle for control over an important bridge
+  Description: A battle for control over an important bridge.
   StoryResults:
   - Type: 0
     ForceRed: -1
@@ -26,18 +26,18 @@ MonoBehaviour:
     LostRed: 61
     LostBlue: 68
     Aggression: 0
-    ResultText: BERD took over the bridge
+    ResultText: BERD took over the bridge.
   - Type: 1
     ForceRed: -2
     ForceBlue: 1
     LostRed: 85
     LostBlue: 37
     Aggression: 1
-    ResultText: The bridge is destroyed
+    ResultText: The bridge destroyed.
   - Type: 2
     ForceRed: -1
     ForceBlue: -2
     LostRed: 27
     LostBlue: 93
     Aggression: 1
-    ResultText: The bridge is destroyed
+    ResultText: The bridge destroyed.

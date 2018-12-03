@@ -26,18 +26,18 @@ MonoBehaviour:
     LostRed: 130
     LostBlue: 35
     Aggression: 0
-    ResultText: The city was almost completely wiped out
+    ResultText: The city was almost completely wiped out.
   - Type: 1
     ForceRed: -3
     ForceBlue: 2
     LostRed: 429
     LostBlue: 2
     Aggression: 4
-    ResultText: The city was almost completely wiped out
+    ResultText: The city was almost completely wiped out.
   - Type: 2
     ForceRed: 0
     ForceBlue: -4
     LostRed: 50
     LostBlue: 170
     Aggression: 1
-    ResultText: A substantial damage was inflicted on BERG's forces.
+    ResultText: Substantial damage inflicted on BERG's forces.

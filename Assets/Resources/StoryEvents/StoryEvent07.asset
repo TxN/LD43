@@ -18,7 +18,8 @@ MonoBehaviour:
   RedTeam: 1
   BlueTeam: 1
   Title: 
-  Description: Substantial number of infantry units engaged in combat near a village.
+  Description: A substantial number of infantry units are engaged in combat near a
+    village.
   StoryResults:
   - Type: 0
     ForceRed: -1
@@ -26,18 +27,18 @@ MonoBehaviour:
     LostRed: 43
     LostBlue: 58
     Aggression: 0
-    ResultText: The combat was ineffective
+    ResultText: Both sides inflicted some damage on each other.
   - Type: 1
     ForceRed: -2
     ForceBlue: 1
     LostRed: 173
     LostBlue: 40
     Aggression: 1
-    ResultText: Massive damage to USI forces
+    ResultText: Massive damage to USI forces.
   - Type: 2
     ForceRed: 2
     ForceBlue: -2
     LostRed: 30
     LostBlue: 162
     Aggression: 1
-    ResultText: Massive damage to BERD forces
+    ResultText: Massive damage to BERD forces.

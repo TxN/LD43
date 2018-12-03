@@ -18,7 +18,8 @@ MonoBehaviour:
   RedTeam: 1
   BlueTeam: 0
   Title: 
-  Description: Wildfires caused by USI, destroyed most of local farms, causing starvation.
+  Description: Wildfires caused by USI, destroyed most of the local farms, causing
+    starvation.
   StoryResults:
   - Type: 0
     ForceRed: 0
@@ -26,14 +27,14 @@ MonoBehaviour:
     LostRed: 206
     LostBlue: 153
     Aggression: 0
-    ResultText: Many deaths from starvation
+    ResultText: Many deaths from starvation.
   - Type: 1
     ForceRed: 0
     ForceBlue: 0
     LostRed: 15
     LostBlue: 15
     Aggression: 0
-    ResultText: Supplies eased off the starvation
+    ResultText: Supplies eased off the starvation.
   - Type: 2
     ForceRed: 0
     ForceBlue: 0

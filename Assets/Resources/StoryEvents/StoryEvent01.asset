@@ -26,18 +26,18 @@ MonoBehaviour:
     LostRed: 86
     LostBlue: 21
     Aggression: 0
-    ResultText: USI forces destroyed by BERG, many civilian deaths
+    ResultText: USI forces destroyed by BERG, a high death toll
   - Type: 1
     ForceRed: -2
     ForceBlue: 0
     LostRed: 80
     LostBlue: 10
     Aggression: 3
-    ResultText: USI forces destroyed, many civilian deaths
+    ResultText: USI forces destroyed by BERG, a high death toll
   - Type: 2
     ForceRed: -1
     ForceBlue: -3
     LostRed: 30
     LostBlue: 90
     Aggression: 3
-    ResultText: USI forces managed to escape, some civilian deaths
+    ResultText: USI forces managed to escape, some causalities

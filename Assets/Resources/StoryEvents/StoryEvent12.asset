@@ -18,8 +18,8 @@ MonoBehaviour:
   RedTeam: 0
   BlueTeam: 1
   Title: 
-  Description: A local water supply is contaminated by BERG. Civilians desperately
-    need water
+  Description: Local water supply contaminated by BERG. Civilians desperately need
+    water.
   StoryResults:
   - Type: 0
     ForceRed: 0
@@ -27,7 +27,7 @@ MonoBehaviour:
     LostRed: 112
     LostBlue: 155
     Aggression: 0
-    ResultText: Many civilian deaths
+    ResultText: Many causalities.
   - Type: 1
     ForceRed: 0
     ForceBlue: 0
@@ -41,4 +41,4 @@ MonoBehaviour:
     LostRed: 20
     LostBlue: 20
     Aggression: 0
-    ResultText: Many lifes saved
+    ResultText: Many lives saved.
