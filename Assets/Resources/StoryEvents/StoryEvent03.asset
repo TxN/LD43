@@ -30,14 +30,14 @@ MonoBehaviour:
   - Type: 1
     ForceRed: -2
     ForceBlue: -1
-    LostRed: 180
-    LostBlue: 70
+    LostRed: 214
+    LostBlue: 64
     Aggression: 1
     ResultText: Massive losses on both sides
   - Type: 2
     ForceRed: -1
     ForceBlue: -2
-    LostRed: 70
-    LostBlue: 180
+    LostRed: 62
+    LostBlue: 204
     Aggression: 1
     ResultText: Massive losses on both sides

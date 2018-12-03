@@ -14,7 +14,7 @@ MonoBehaviour:
   Id: combat_01
   Type: 0
   IsReusable: 1
-  TimeToExpire: 15
+  TimeToExpire: 20
   RedTeam: 1
   BlueTeam: 1
   Title: 
@@ -32,12 +32,12 @@ MonoBehaviour:
     ForceBlue: 0
     LostRed: 80
     LostBlue: 10
-    Aggression: 2
+    Aggression: 3
     ResultText: USI forces destroyed, many civilian deaths
   - Type: 2
     ForceRed: -1
     ForceBlue: -3
     LostRed: 30
     LostBlue: 90
-    Aggression: 2
+    Aggression: 3
     ResultText: USI forces managed to escape, some civilian deaths

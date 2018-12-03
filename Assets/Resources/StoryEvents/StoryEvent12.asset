@@ -14,7 +14,7 @@ MonoBehaviour:
   Id: combat_08
   Type: 1
   IsReusable: 1
-  TimeToExpire: 25
+  TimeToExpire: 37
   RedTeam: 0
   BlueTeam: 1
   Title: 

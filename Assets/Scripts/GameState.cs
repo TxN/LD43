@@ -58,6 +58,9 @@ public class GameState : MonoSingleton<GameState> {
         if ( Input.GetKeyDown(KeyCode.P) ) { //Quick skip
             _timer = TotalGameTime * 0.95f;
         }
+		if ( Input.GetKeyDown(KeyCode.O) ) { //speedup
+			Time.timeScale = 2f;
+		}
 		if ( !IsPause ) {
 			_timer += Time.deltaTime;
 			UpdateEventSpawn();
@@ -88,10 +91,10 @@ public class GameState : MonoSingleton<GameState> {
 	}
 
     void UpdateDeathCounter() {
-        if ( Random.Range(0, 100) < 5 ) {
+        if ( Random.Range(0, 100) < 3 ) {
             RedDeaths++;
         }
-        if ( Random.Range(0, 100) < 5 ) {
+        if ( Random.Range(0, 100) < 3 ) {
             BlueDeaths++;
         }
     }

@@ -22,7 +22,12 @@ public class ActionWindow : MonoBehaviour {
 
 	bool _actionEnabled = false;
 
+	private void Start() {
+		EventManager.Subscribe<Event_StoryPointDone>(this, OnStoryPointDone);
+	}
+
 	private void OnDestroy() {
+		EventManager.Unsubscribe<Event_StoryPointDone>(OnStoryPointDone);
 		_seq = TweenHelper.ResetSequence(_seq);
 	}
 
@@ -105,5 +110,11 @@ public class ActionWindow : MonoBehaviour {
 		var gs = GameState.Instance;
 		gs.TryLaunchPlane(_curPoint);
 		CloseWindow();
+	}
+
+	void OnStoryPointDone(Event_StoryPointDone e) {
+		if ( e.Point == _curPoint && _actionEnabled && gameObject.activeSelf ) {
+			CloseWindow();
+		}
 	}
 }

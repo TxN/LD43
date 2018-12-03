@@ -18,26 +18,26 @@ MonoBehaviour:
   RedTeam: 1
   BlueTeam: 1
   Title: 
-  Description: Berd is using artillery to reclaim a city.
+  Description: BERD is using artillery to reclaim a city.
   StoryResults:
   - Type: 0
     ForceRed: -3
     ForceBlue: 2
-    LostRed: 212
-    LostBlue: 22
+    LostRed: 130
+    LostBlue: 35
     Aggression: 0
     ResultText: The city was almost completely wiped out
   - Type: 1
     ForceRed: -3
     ForceBlue: 2
-    LostRed: 200
-    LostBlue: 0
-    Aggression: 3
+    LostRed: 429
+    LostBlue: 2
+    Aggression: 4
     ResultText: The city was almost completely wiped out
   - Type: 2
     ForceRed: 0
     ForceBlue: -4
     LostRed: 50
-    LostBlue: 150
+    LostBlue: 170
     Aggression: 1
     ResultText: A substantial damage was inflicted on BERG's forces.

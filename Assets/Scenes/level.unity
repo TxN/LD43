@@ -1851,7 +1851,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Attack Blue
+  m_Text: Attack BERD
 --- !u!222 &554340518
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2153,7 +2153,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Attack Red
+  m_Text: Attack USI
 --- !u!222 &624656846
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5076,7 +5076,7 @@ MonoBehaviour:
   PlaneOnTargetDelta: 5
   MaxSpawnRadius: 1500
   MinSpawnRadius: 1000
-  PlaneSpeed: 200
+  PlaneSpeed: 270
   SpawnRadius: 900
   SpawnPoints:
   - {fileID: 2133327092}
@@ -5697,7 +5697,7 @@ MonoBehaviour:
   Fader: {fileID: 256414830}
   MinEventSpawnDelay: 3
   MaxEventSpawnDelay: 7
-  TotalGameTime: 180
+  TotalGameTime: 210
   GameSegmentsCount: 6
 --- !u!4 &1549778668
 Transform:
@@ -7263,7 +7263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.9098039}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

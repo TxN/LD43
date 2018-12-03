@@ -14,7 +14,7 @@ MonoBehaviour:
   Id: humanitarian_03
   Type: 1
   IsReusable: 1
-  TimeToExpire: 15
+  TimeToExpire: 32
   RedTeam: 1
   BlueTeam: 0
   Title: 

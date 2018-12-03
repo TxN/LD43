@@ -14,7 +14,7 @@ MonoBehaviour:
   Id: humanitarian_00
   Type: 1
   IsReusable: 1
-  TimeToExpire: 25
+  TimeToExpire: 35
   RedTeam: 0
   BlueTeam: 1
   Title: 
@@ -38,7 +38,7 @@ MonoBehaviour:
   - Type: 2
     ForceRed: 0
     ForceBlue: 0
-    LostRed: 20
-    LostBlue: 20
+    LostRed: 7
+    LostBlue: 3
     Aggression: 0
-    ResultText: Many lifes saved
+    ResultText: Supplies eased off the need for water

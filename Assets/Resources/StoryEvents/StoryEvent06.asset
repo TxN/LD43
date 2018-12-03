@@ -38,6 +38,6 @@ MonoBehaviour:
     ForceRed: 2
     ForceBlue: -1
     LostRed: 0
-    LostBlue: 40
+    LostBlue: 85
     Aggression: 2
     ResultText: All BERG's units were destroyed

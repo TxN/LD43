@@ -35,9 +35,9 @@ MonoBehaviour:
     Aggression: 1
     ResultText: The siege failed
   - Type: 2
-    ForceRed: 2
+    ForceRed: 3
     ForceBlue: -5
     LostRed: 50
     LostBlue: 100
-    Aggression: 2
+    Aggression: 3
     ResultText: The siege succeeded, many civilian deaths

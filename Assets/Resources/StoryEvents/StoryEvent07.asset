@@ -30,14 +30,14 @@ MonoBehaviour:
   - Type: 1
     ForceRed: -2
     ForceBlue: 1
-    LostRed: 140
+    LostRed: 173
     LostBlue: 40
     Aggression: 1
     ResultText: Massive damage to USI forces
   - Type: 2
-    ForceRed: 1
+    ForceRed: 2
     ForceBlue: -2
     LostRed: 30
-    LostBlue: 150
+    LostBlue: 162
     Aggression: 1
-    ResultText: Massive damage to USI forces
+    ResultText: Massive damage to BERD forces
